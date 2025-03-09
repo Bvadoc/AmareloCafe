@@ -1,0 +1,70 @@
+/* Product Card Styles */
+.container.cards-container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.row.cards-row {
+  margin-bottom: 50px;
+  display: flex; /* Usar flexbox para asegurar que todas las tarjetas tengan la misma altura */
+  flex-wrap: wrap; /* Permitir que las tarjetas se ajusten a múltiples filas si es necesario */
+}
+
+.col-md-4.col-mb-4 {
+  display: flex;
+  flex-direction: column; /* Asegurar que los hijos se dispongan en columnas */
+  margin-bottom: 30px; /* Añade espacio entre las filas */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegurar que el contenido se distribuya uniformemente */
+  height: 100%; /* Asegurar que el contenedor de la tarjeta ocupe toda la altura disponible */
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border: none;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover;
+}
+
+.card-body {
+  flex: 1; /* Permitir que el cuerpo de la tarjeta ocupe todo el espacio disponible */
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Alinear el contenido al final del contenedor */
+}
+
+.card-title {
+  font-size: 18px;
+  color: #333;
+  font-family: 'Monaco', Monospace;
+  text-align: center;
+  margin-bottom: 10px; /* Añade espacio entre el título y el texto */
+}
+
+.card-text {
+  font-size: 14px; 
+  color: #666;
+  font-family: 'Monaco', Monospace;
+  flex: 1; /* Permitir que el texto de la tarjeta ocupe todo el espacio disponible */
+}
+
+.btn-primary {
+  margin-top: 15px; /* Añade espacio entre el texto y el botón */
+}
+
+.content {
+ color: #333;
+ text-align: center; 
+ margin-top: 30px; /* Add margin-top to create space */
+ margin-bottom: 90px;
+ font-family: "Baskervville", serif;
+}
