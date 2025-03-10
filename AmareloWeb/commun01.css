@@ -95,3 +95,63 @@ h4 {
     line-height: 2; /* Ajusta el valor de line-height según la cantidad de espacio que desees */
     margin: 0;
 }
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 5px 10px; /* Ajustar padding en móviles */
+    }
+
+    .navbar .container-fluid {
+        flex-direction: column; /* Cambiar disposición a columna */
+    }
+
+    .navbar-brand {
+        padding-left: 10px; /* Ajustar padding izquierdo en móviles */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Cambiar disposición a columna */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px; /* Reducir tamaño de la fuente en móviles */
+        padding: 5px 10px; /* Ajustar padding en móviles */
+        margin: 5px 0; /* Ajustar margen en móviles */
+    }
+
+    .footer p {
+        font-size: 14px; /* Ajustar tamaño de la fuente en móviles */
+    }
+}
+
+/* Media Queries para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .navbar .container-fluid {
+        flex-direction: row; /* Disposición en fila para tablets */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 15px; /* Ajustar tamaño de la fuente en tablets */
+        padding: 8px 16px; /* Ajustar padding en tablets */
+    }
+
+    .footer p {
+        font-size: 15px; /* Ajustar tamaño de la fuente en tablets */
+    }
+}
+
+/* Media Queries para dispositivos grandes */
+@media (min-width: 1025px) {
+    .navbar .container-fluid {
+        flex-direction: row; /* Disposición en fila para dispositivos grandes */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px; /* Tamaño de la fuente en dispositivos grandes */
+        padding: 10px 20px; /* Ajustar padding en dispositivos grandes */
+    }
+
+    .footer p {
+        font-size: 16px; /* Ajustar tamaño de la fuente en dispositivos grandes */
+    }
+}
