@@ -14,9 +14,10 @@
 .col-md-4.col-mb-4 {
   display: flex;
   flex-direction: column; /* Asegurar que los hijos se dispongan en columnas */
-  margin-left: 15px;
-  margin-right: 15px;
   margin-bottom: 30px; /* Añade espacio entre las filas */
+  margin-left: 15px; /* Añadir margen izquierdo */
+  margin-right: 15px; /* Añadir margen derecho */
+
 }
 
 .card {
@@ -74,5 +75,8 @@
 @media (max-width: 600px) {
   .col-md-4.col-mb-4 {
     margin-bottom: 15px;
+    margin-left: 10px; /* Añadir margen izquierdo para móviles */
+    margin-right: 10px; /* Añadir margen derecho para móviles */
   }
 }
+
