@@ -95,6 +95,12 @@ h4 {
     line-height: 2; /* Ajusta el valor de line-height según la cantidad de espacio que desees */
     margin: 0;
 }
+    /* Ajustes para las fotos en móviles */
+    img {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        height: auto; /* Mantén la proporción */
+    }
+
 /* Media Queries para dispositivos móviles */
 @media (max-width: 600px) {
     .navbar {
