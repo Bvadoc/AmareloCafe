@@ -5,6 +5,7 @@
 }
 
 .row.cards-row {
+  justify-content: center;
   margin-bottom: 50px;
   display: flex; /* Usar flexbox para asegurar que todas las tarjetas tengan la misma altura */
   flex-wrap: wrap; /* Permitir que las tarjetas se ajusten a múltiples filas si es necesario */
@@ -13,6 +14,8 @@
 .col-md-4.col-mb-4 {
   display: flex;
   flex-direction: column; /* Asegurar que los hijos se dispongan en columnas */
+  margin-left: 15px;
+  margin-right: 15px;
   margin-bottom: 30px; /* Añade espacio entre las filas */
 }
 
