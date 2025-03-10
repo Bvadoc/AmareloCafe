@@ -71,3 +71,8 @@
  margin-bottom: 90px;
  font-family: "Baskervville", serif;
 }
+@media (max-width: 600px) {
+  .col-md-4.col-mb-4 {
+    margin-bottom: 15px;
+  }
+}
