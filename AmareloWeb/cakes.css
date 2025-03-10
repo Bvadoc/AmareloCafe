@@ -7,7 +7,8 @@
 .row.cards-row {
   justify-content: center;
   margin-bottom: 50px;
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col-md-4.col-mb-4 {
@@ -16,7 +17,7 @@
   margin-bottom: 30px; /* Añade espacio entre las filas */
   margin-left: 15px; /* Añadir margen izquierdo */
   margin-right: 15px; /* Añadir margen derecho */
-
+  max-width: 100%; /* Asegurar que las tarjetas ocupen todo el ancho del contenedor */
 }
 
 .card {
@@ -28,6 +29,8 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-img-top {
@@ -71,11 +74,24 @@
  margin-bottom: 90px;
  font-family: "Baskervville", serif;
 }
+
 @media (max-width: 600px) {
   .col-md-4.col-mb-4 {
     margin-bottom: 15px;
     margin-left: 10px; /* Añadir margen izquierdo para móviles */
     margin-right: 10px; /* Añadir margen derecho para móviles */
+    flex: 0 0 100%; /* Asegurar que las tarjetas ocupen todo el ancho del contenedor en móviles */
+    max-width: 100%;
+  }
+
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-img-top {
+    height: auto; /* Ajustar la altura para que la imagen no se deforme */
   }
 }
+
 
