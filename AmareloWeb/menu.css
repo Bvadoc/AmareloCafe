@@ -113,3 +113,37 @@ ul li strong {
 ul li::before {
     content: ''; /* Asegúrate de que no haya contenido antes de los elementos de la lista */
 }
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    .menu-section {
+        flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+        gap: 10px; /* Reduce el espacio entre los elementos */
+    }
+    
+    .image-wrapper {
+        flex-direction: column; /* Cambia la dirección de las imágenes a columnas */
+        gap: 10px; /* Reduce el espacio entre las imágenes */
+    }
+
+    .image-wrapper img {
+        max-width: 100%; /* Asegura que las imágenes ocupen el ancho completo */
+        height: auto;
+    }
+    
+    .item-container {
+        flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+        text-align: center; /* Centra el texto */
+    }
+    
+    header.item-name {
+        font-size: 1em; /* Reduce el tamaño de la fuente */
+        margin-bottom: 10px; /* Reduce el margen inferior */
+    }
+    
+    span.item-price {
+        font-size: 1em; /* Ajusta el tamaño de la fuente */
+        float: none; /* Elimina el flotado */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        text-align: center; /* Centra el texto */
+    }
+}
