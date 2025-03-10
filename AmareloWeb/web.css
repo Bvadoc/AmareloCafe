@@ -61,3 +61,32 @@
         display: block;   
         margin: 10px auto; /* Reduce margin on all sides */
       }
+      .row.cards-row {
+        justify-content: center;
+      }
+      .cards-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Permitir que las tarjetas se ajusten en múltiples filas si es necesario */
+        margin-bottom: 50px;
+      }
+      
+      .card-img-top {
+        width: 100%;
+        height: auto;
+      }
+      
+      .col-md-4.col-mb-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrará el contenido */
+        margin-bottom: 30px;
+      }
+      
+      @media (min-width: 1025px) {
+        .col-md-4.col-mb-4 {
+          flex: 1 0 30%;
+          max-width: 30%;
+        }
+      }
+      
