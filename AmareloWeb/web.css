@@ -49,11 +49,6 @@
         color: #333; 
         font-family: "Baskervville", serif; /* Fuente para títulos */
       }
-      .h6 {
-        font-size: 21px;
-        color: #0f0e0e;
-        font-family: "Baskervville", serif;
-      }
       .main-image {
         max-width: 600px; /* Set a max-width to make the image narrower */
         width: auto; /* Ensure the image scales with the container */
