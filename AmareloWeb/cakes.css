@@ -2,50 +2,49 @@
 .container.cards-container {
   margin-top: 30px;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permitir que las tarjetas se ajusten a múltiples filas si es necesario */
 }
 
 .row.cards-row {
-  justify-content: center;
   margin-bottom: 50px;
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* Usar flexbox para asegurar que todas las tarjetas tengan la misma altura */
+  flex-wrap: wrap; /* Permitir que las tarjetas se ajusten a múltiples filas si es necesario */
+  justify-content: center; /* Centrar las tarjetas en el contenedor */
 }
 
-.col-12.col-md-6.col-lg-4.mb-4 {
+.col-md-4.col-mb-4 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
-  max-width: 100%;
+  margin-bottom: 30px; /* Añade espacio entre las filas */
+  padding: 0 15px; /* Añadir padding para separar las tarjetas del borde */
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  justify-content: space-between; /* Asegurar que el contenido se distribuya uniformemente */
+  height: 100%; /* Asegurar que el contenedor de la tarjeta ocupe toda la altura disponible */
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   border: none;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .card-img-top {
   width: 100%;
-  height: 200px;
+  height: 200px; /* Altura fija para las imágenes */
   object-fit: cover;
 }
 
 .card-body {
-  flex: 1;
+  flex: 1; /* Permitir que el cuerpo de la tarjeta ocupe todo el espacio disponible */
   padding: 15px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Alinear el contenido al final del contenedor */
 }
 
 .card-title {
@@ -53,51 +52,46 @@
   color: #333;
   font-family: 'Monaco', Monospace;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Añade espacio entre el título y el texto */
 }
 
 .card-text {
-  font-size: 14px;
+  font-size: 14px; 
   color: #666;
   font-family: 'Monaco', Monospace;
-  flex: 1;
+  flex: 1; /* Permitir que el texto de la tarjeta ocupe todo el espacio disponible */
 }
 
 .btn-primary {
-  margin-top: 15px;
+  margin-top: 15px; /* Añade espacio entre el texto y el botón */
 }
 
 .content {
- color: #333;
- text-align: center; 
- margin-top: 30px;
- margin-bottom: 90px;
- font-family: "Baskervville", serif;
+  color: #333;
+  text-align: center; 
+  margin-top: 30px; /* Add margin-top to create space */
+  margin-bottom: 90px;
+  font-family: "Baskervville", serif;
 }
 
-@media (max-width: 600px) {
-  .col-12.col-md-6.col-lg-4.mb-4 {
-    margin-bottom: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .card {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .card-img-top {
-    height: auto;
-  }
-}
-
-img {
-  width: 100%;
+.content img {
+  max-width: 100%; /* Asegurar que la imagen no se desborde del contenedor */
   height: auto;
+  display: block;
+  margin: 0 auto; /* Centrar la imagen */
 }
 
+/* Responsive Design */
+@media (max-width: 992px) {
+  .card {
+    height: auto; /* Permitir que las tarjetas se ajusten automáticamente */
+  }
+
+  .col-md-4.col-mb-4 {
+    flex: 1 0 100%; /* Asegurar que las tarjetas ocupen todo el ancho en pantallas pequeñas */
+    max-width: 100%; /* Asegurar que las tarjetas no excedan el ancho del contenedor */
+    margin-bottom: 20px; /* Añadir margen inferior para separar las tarjetas */
+  }
+}
 
 
