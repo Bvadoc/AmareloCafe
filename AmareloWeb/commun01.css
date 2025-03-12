@@ -1,4 +1,10 @@
 /* Common Styles for All Pages */
+body {
+  background-color: #fff;
+  margin: 0;
+  color: #333;
+  font-family: 'Open Sans', sans-serif; /* Fuente para el texto del cuerpo */
+}
 h4, .footer p {
     font-family: "Baskervville", serif;
 }
