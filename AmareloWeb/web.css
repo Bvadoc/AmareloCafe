@@ -1,4 +1,5 @@
-     .product-cards {
+/* Estilos de contenedores principales */
+.product-cards {
   margin-top: 20px;
   display: flex;
   justify-content: center;
