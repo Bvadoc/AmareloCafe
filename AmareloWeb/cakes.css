@@ -14,7 +14,7 @@
   justify-content: center; /* Centrar las tarjetas en el contenedor */
 }
 
-.col-md-4.col-mb-4 {
+.col-sm-12 col-md-4 col-lg-4 {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px; /* Añade espacio entre las filas */
