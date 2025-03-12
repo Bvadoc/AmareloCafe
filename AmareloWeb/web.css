@@ -61,27 +61,36 @@
         display: block;   
         margin: 10px auto; /* Reduce margin on all sides */
       }
+      /* Estilo para .cards-row */
       .row.cards-row {
         justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
       }
+
+      /* Estilo para .cards-container */
       .cards-container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap; /* Permitir que las tarjetas se ajusten en múltiples filas si es necesario */
         margin-bottom: 50px;
       }
-      
+
+      /* Estilo para la imagen de la tarjeta */
       .card-img-top {
         width: 100%;
         height: auto;
       }
-      
+
+      /* Estilo para .col-md-4.col-mb-4 */
       .col-md-4.col-mb-4 {
         display: flex;
         flex-direction: column;
         align-items: center; /* Centrará el contenido */
         margin-bottom: 30px;
       }
+
       
       @media (min-width: 1025px) {
         .col-md-4.col-mb-4 {
