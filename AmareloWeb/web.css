@@ -1,101 +1,86 @@
-      /* Estilos generales del documento */
-      body {
-        background-color: #fff;
-        margin: 0;
-        height: 100%;
-        color: #333;
-        font-family: 'Open Sans', sans-serif; /* Fuente para el texto del cuerpo */
-      }
-      /* Estilos de contenedores principales */
+     .product-cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-      .cards {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-      }
+.product-cards-container {
+  margin-bottom: 50px; /* Add margin-bottom to create space between cards and footer */
+}
 
-      .cards-container {
-          margin-bottom: 50px;  /* Add margin-bottom to create space between cards and footer */
-        }
-      /* Estilos específicos de elementos */
-      .card {
-        background: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .card-img-top {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-      }
-      .card-body {
-        padding: 15px;
-      }
-      .card-text {
-        font-size: 14px; 
-        color: #666;
-        font-family: "Baskervville", serif;
-      }
-      .content {
-        color: rgb(11, 11, 11);
-        text-align: center; 
-        margin-top: 70px; /* Add margin-top to create space */
-        margin-bottom: 70px;
-        font-family: "Baskervville", serif;
-        font-weight: 800;
-      }
-      h5.card-title { 
-        font-size: 18px; 
-        color: #333; 
-        font-family: "Baskervville", serif; /* Fuente para títulos */
-      }
-      .h6 {
-        font-size: 21px;
-        color: #0f0e0e;
-        font-family: "Baskervville", serif;
-      }
-      .main-image {
-        max-width: 600px; /* Set a max-width to make the image narrower */
-        width: auto; /* Ensure the image scales with the container */
-        height: auto; /* Maintain the aspect ratio */
-        display: block;   
-        margin: 10px auto; /* Reduce margin on all sides */
-      }
-      /* Estilo para .cards-row */
-      .row.cards-row {
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 50px;
-      }
+/* Estilos específicos de elementos */
+.card {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-      /* Estilo para .cards-container */
-      .cards-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; /* Permitir que las tarjetas se ajusten en múltiples filas si es necesario */
-        margin-bottom: 50px;
-      }
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
-      /* Estilo para la imagen de la tarjeta */
-      .card-img-top {
-        width: 100%;
-        height: auto;
-      }
+.card-body {
+  padding: 15px;
+}
 
-      /* Estilo para .col-md-4.col-mb-4 */
-      .col-md-4.col-mb-4 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centrará el contenido */
-        margin-bottom: 30px;
-      }
+.card-text {
+  font-size: 14px;
+  color: #666;
+  font-family: "Baskervville", serif;
+}
 
-      
-      @media (min-width: 1025px) {
-        .col-md-4.col-mb-4 {
-          flex: 1 0 30%;
-          max-width: 30%;
-        }
-      }
-      
+.description {
+  color: rgb(11, 11, 11);
+  text-align: center;
+  margin-top: 70px; /* Add margin-top to create space */
+  margin-bottom: 70px;
+  font-family: "Baskervville", serif;
+  font-weight: 800;
+}
+
+h2.headline {
+  font-size: 18px;
+  color: #333;
+  font-family: "Baskervville", serif; /* Fuente para títulos */
+}
+
+.main-image {
+  max-width: 600px; /* Set a max-width to make the image narrower */
+  width: auto; /* Ensure the image scales with the container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block;
+  margin: 10px auto; /* Reduce margin on all sides */
+}
+
+/* Estilo para .product-cards-row */
+.row.product-cards-row {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* Estilo para .product-cards-container */
+.product-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permitir que las tarjetas se ajusten en múltiples filas si es necesario */
+  margin-bottom: 50px;
+}
+
+/* Estilo para .product-card */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrará el contenido */
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1025px) {
+  .col-md-4.col-mb-4 {
+    flex: 1 0 30%;
+    max-width: 30%;
+  }
+}
